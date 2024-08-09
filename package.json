@@ -1,0 +1,34 @@
+{
+  "name": "soch-webrtc",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SOCH MH - WebRTC",
+  "main": "./src/server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanhhoang/soch-webrtc.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB"
+  ],
+  "author": "lanhhoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanhhoang/soch-webrtc/issues"
+  },
+  "homepage": "https://github.com/lanhhoang/soch-webrtc#readme",
+  "dependencies": {
+    "peer": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
