@@ -5,7 +5,8 @@
   "description": "SOCH MH - WebRTC",
   "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/lanhhoang/soch-webrtc/issues"
   },
-  "homepage": "https://github.com/lanhhoang/soch-webrtc#readme"
+  "homepage": "https://github.com/lanhhoang/soch-webrtc#readme",
+  "dependencies": {
+    "peer": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
