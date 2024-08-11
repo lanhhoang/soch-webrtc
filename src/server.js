@@ -1,3 +1,12 @@
-import { PeerServer } from "peer";
+import env from "./configs/env.config.js";
+import configureExpress from "./configs/express.config.js";
+import configurePeerServer from "./configs/peer.config.js";
 
-PeerServer({ port: 3001, path: "/" });
+const { PORT } = env;
+
+const app = configureExpress();
+const server = configurePeerServer(app);
+
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
